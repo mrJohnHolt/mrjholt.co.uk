@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- TEMPLATE: copy this file to the walk name in lower case (for example ribchester.html), then replace every PLACEHOLDER -->
+  <title>PLACEHOLDER: Walk name | John Holt</title>
+  <meta name="description" content="PLACEHOLDER: one sentence describing the walk and where it is.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__inner container">
+      <a class="logo" href="index.html" aria-label="John Holt, home">
+        <span class="logo__mark">JH</span>
+        <span class="logo__text">John Holt</span>
+      </a>
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="index.html">Home</a></li>
+          <li><a class="nav__link" href="index.html#latest-video">Latest video</a></li>
+          <li><a class="nav__link" href="index.html#latest-walk">Latest walk</a></li>
+          <li><a class="nav__link" href="index.html#about">About</a></li>
+        </ul>
+      </nav>
+      <a class="button button--dark header__cta" href="https://www.youtube.com/@MrJHolt">Subscribe</a>
+      <button class="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-nav">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- WALK LOCATION: set the latitude and longitude here, this is the only place they are needed -->
+  <main data-lat="53.8167" data-lng="-2.5333">
+    <section class="hero">
+      <div class="hero__content">
+        <p class="hero__eyebrow">Walk guide</p>
+        <h1 class="hero__title">PLACEHOLDER: Walk name</h1>
+        <p class="hero__meta"><i class="fa-solid fa-location-dot" aria-hidden="true"></i>PLACEHOLDER: Village, Lancashire</p>
+        <p class="hero__text">PLACEHOLDER: a short summary of the walk, what to expect and who it suits.</p>
+        <a class="button button--green" href="#episode">Watch the episode</a>
+      </div>
+      <div class="hero__media">
+        <!-- PLACEHOLDER: main walk photo (landscape, WebP) -->
+        <img class="hero__image" src="img/placeholder.webp" alt="PLACEHOLDER: describe the photo" width="1600" height="1200">
+      </div>
+    </section>
+
+    <section class="section section--sky" id="at-a-glance">
+      <div class="container">
+        <h2 class="section__title section__title--centre">The walk at a glance</h2>
+        <div class="circles">
+          <div class="circle">
+            <i class="fa-solid fa-calendar-day circle__icon" aria-hidden="true"></i>
+            <span class="circle__label">Date walked</span>
+            <span class="circle__value">PLACEHOLDER: date</span>
+          </div>
+          <div class="circle">
+            <i class="fa-solid fa-route circle__icon" aria-hidden="true"></i>
+            <span class="circle__label">Distance</span>
+            <span class="circle__value">PLACEHOLDER: miles</span>
+          </div>
+          <div class="circle">
+            <i class="fa-solid fa-clock circle__icon" aria-hidden="true"></i>
+            <span class="circle__label">Approx. time</span>
+            <span class="circle__value">PLACEHOLDER: hours</span>
+          </div>
+        </div>
+        <div class="start-point">
+          <p class="circle__label">Start point</p>
+          <!-- PLACEHOLDER: what3words address, for example ///word.word.word, and its link -->
+          <span class="start-point__words">///PLACEHOLDER.what.three</span>
+          <a class="button button--dark" href="https://what3words.com/PLACEHOLDER.what.three">Open in what3words</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="episode">
+      <div class="container">
+        <h2 class="section__title section__title--centre">The episode</h2>
+        <!-- PLACEHOLDER: paste the episode YouTube video ID into data-youtube-id -->
+        <div class="video" data-youtube-id="PLACEHOLDER_VIDEO_ID" data-title="Walk episode">
+          <p class="video__placeholder">PLACEHOLDER: episode video. Paste the YouTube ID into data-youtube-id.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft" id="route">
+      <div class="container">
+        <h2 class="section__title section__title--centre">The route</h2>
+        <p class="section__intro section__intro--centre">Follow the animated map to see exactly where I went.</p>
+        <!-- PLACEHOLDER: paste the unlisted animated route map YouTube video ID into data-youtube-id -->
+        <div class="video" data-youtube-id="PLACEHOLDER_VIDEO_ID" data-title="Animated route map">
+          <p class="video__placeholder">PLACEHOLDER: animated route map (unlisted video). Paste the YouTube ID into data-youtube-id.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="photos">
+      <div class="container">
+        <h2 class="section__title section__title--centre">Photos</h2>
+        <!-- PLACEHOLDER: replace each image with a compressed WebP (800 x 600). Keep loading="lazy" -->
+        <div class="gallery">
+          <img class="gallery__image" src="img/placeholder.webp" alt="PLACEHOLDER: photo 1" width="800" height="600" loading="lazy">
+          <img class="gallery__image" src="img/placeholder.webp" alt="PLACEHOLDER: photo 2" width="800" height="600" loading="lazy">
+          <img class="gallery__image" src="img/placeholder.webp" alt="PLACEHOLDER: photo 3" width="800" height="600" loading="lazy">
+          <img class="gallery__image" src="img/placeholder.webp" alt="PLACEHOLDER: photo 4" width="800" height="600" loading="lazy">
+          <img class="gallery__image" src="img/placeholder.webp" alt="PLACEHOLDER: photo 5" width="800" height="600" loading="lazy">
+          <img class="gallery__image" src="img/placeholder.webp" alt="PLACEHOLDER: photo 6" width="800" height="600" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--sky" id="notes">
+      <div class="container split">
+        <div>
+          <h2 class="section__title">Practical notes</h2>
+          <p>What I learned on the day, so you can repeat the walk without surprises.</p>
+        </div>
+        <div class="accordion">
+          <details class="accordion__item" open>
+            <summary class="accordion__summary">Parking<span class="accordion__icon"><i class="fa-solid fa-plus" aria-hidden="true"></i></span></summary>
+            <p class="accordion__body">PLACEHOLDER: where I parked, cost, how busy it was.</p>
+          </details>
+          <details class="accordion__item">
+            <summary class="accordion__summary">Refreshments<span class="accordion__icon"><i class="fa-solid fa-plus" aria-hidden="true"></i></span></summary>
+            <p class="accordion__body">PLACEHOLDER: cafes, pubs and shops on or near the route.</p>
+          </details>
+          <details class="accordion__item">
+            <summary class="accordion__summary">Tricky crossings<span class="accordion__icon"><i class="fa-solid fa-plus" aria-hidden="true"></i></span></summary>
+            <p class="accordion__body">PLACEHOLDER: roads, stiles, stepping stones or anything to take care with.</p>
+          </details>
+          <details class="accordion__item">
+            <summary class="accordion__summary">Good to know<span class="accordion__icon"><i class="fa-solid fa-plus" aria-hidden="true"></i></span></summary>
+            <p class="accordion__body">PLACEHOLDER: footwear, terrain, toilets, dogs, anything else that helps.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--sage" id="conditions">
+      <div class="container">
+        <h2 class="section__title section__title--centre">Conditions at the start</h2>
+        <h3 class="stats__heading">Weather now</h3>
+        <div class="stats">
+          <div class="stat"><span class="stat__label">Temperature</span><span class="stat__value" data-field="temp">--</span></div>
+          <div class="stat"><span class="stat__label">Feels like</span><span class="stat__value" data-field="feels">--</span></div>
+          <div class="stat"><span class="stat__label">Conditions</span><span class="stat__value" data-field="condition">--</span></div>
+          <div class="stat"><span class="stat__label">Wind</span><span class="stat__value" data-field="wind">--</span></div>
+          <div class="stat"><span class="stat__label">Humidity</span><span class="stat__value" data-field="humidity">--</span></div>
+        </div>
+        <h3 class="stats__heading">Light today</h3>
+        <div class="stats">
+          <div class="stat"><span class="stat__label">Sunrise</span><span class="stat__value" data-field="sunrise">--</span></div>
+          <div class="stat"><span class="stat__label">Sunset</span><span class="stat__value" data-field="sunset">--</span></div>
+          <div class="stat"><span class="stat__label">Morning golden hour</span><span class="stat__value" data-field="golden-am">--</span></div>
+          <div class="stat"><span class="stat__label">Evening golden hour</span><span class="stat__value" data-field="golden-pm">--</span></div>
+        </div>
+        <p class="conditions__note" data-field="status">Live data for the walk start. Times are UK local time.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <a class="logo logo--light" href="index.html" aria-label="John Holt, home">
+            <span class="logo__mark">JH</span>
+            <span class="logo__text">John Holt</span>
+          </a>
+          <p class="footer__tagline">Walks, nature and stories I want to share.</p>
+        </div>
+        <ul>
+          <li><a class="footer__link" href="index.html">Home</a></li>
+          <li><a class="footer__link" href="index.html#latest-video">Latest video</a></li>
+          <li><a class="footer__link" href="index.html#latest-walk">Latest walk</a></li>
+          <li><a class="footer__link" href="index.html#about">About</a></li>
+        </ul>
+        <ul>
+          <li><a class="footer__link" href="https://www.youtube.com/@MrJHolt"><i class="fa-brands fa-youtube" aria-hidden="true"></i>YouTube</a></li>
+          <li><a class="footer__link" href="#"><i class="fa-brands fa-instagram" aria-hidden="true"></i>Instagram</a></li>
+        </ul>
+      </div>
+      <p class="footer__legal">&copy; 2026 John Holt</p>
+    </div>
+  </footer>
+
+  <nav class="bottom-nav" aria-label="Quick links">
+    <a class="bottom-nav__link" href="index.html"><i class="fa-solid fa-house" aria-hidden="true"></i>Home</a>
+    <a class="bottom-nav__link" href="ribchester.html"><i class="fa-solid fa-person-hiking" aria-hidden="true"></i>Walk</a>
+    <a class="bottom-nav__link" href="index.html#about"><i class="fa-solid fa-user" aria-hidden="true"></i>About</a>
+    <a class="bottom-nav__link" href="https://www.youtube.com/@MrJHolt"><i class="fa-brands fa-youtube" aria-hidden="true"></i>YouTube</a>
+  </nav>
+
+  <script src="https://unpkg.com/suncalc@1.9.0/suncalc.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/sun-weather.js"></script>
+</body>
+</html>
