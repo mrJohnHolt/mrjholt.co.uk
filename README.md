@@ -7,7 +7,9 @@ Walking vlog site. Vanilla HTML, CSS and JS, hosted on GitHub Pages.
 2. Replace every `PLACEHOLDER` (search the file for it).
 3. Set `data-lat` and `data-lng` on the `<main>` element. This is the only place coordinates are needed.
 4. Paste the YouTube IDs into the two `data-youtube-id` attributes.
-5. Update the latest video and latest walk sections in `index.html`, and the Walk link in the bottom nav.
+5. Add one entry at the top of the `WALKS` list in `js/walks.js` (slug, title, date, summary, url, image). The home page shows the first entry as the latest walk and lists the rest under Previous walks.
+6. Set `data-walk-nav` on the new page to the same slug. Previous and next links are built from the list, so older pages need no edits.
+7. Update the latest video section in `index.html` if there is a new video.
 
 ## DNS records (set at the registrar for mrjholt.co.uk)
 

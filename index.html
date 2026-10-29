@@ -63,36 +63,16 @@
     </section>
 
     <section class="section section--walk" id="latest-walk">
-      <div class="container split split--even">
-        <div>
-          <h2 class="section__title">Latest walk</h2>
-          <!-- PLACEHOLDER: walk name and summary -->
-          <p><strong>Ribchester</strong></p>
-          <p>PLACEHOLDER: a short summary of the walk, what makes it worth doing and who it suits.</p>
-          <a class="button button--light" href="ribchester.html">View the walk</a>
-          <ul class="facts">
-            <li class="facts__row">
-              <span class="facts__label"><i class="fa-solid fa-location-dot" aria-hidden="true"></i>Location</span>
-              <span class="facts__value">PLACEHOLDER: Ribchester, Lancashire</span>
-            </li>
-            <li class="facts__row">
-              <span class="facts__label"><i class="fa-solid fa-calendar-day" aria-hidden="true"></i>Date walked</span>
-              <span class="facts__value">PLACEHOLDER: date</span>
-            </li>
-            <li class="facts__row">
-              <span class="facts__label"><i class="fa-solid fa-route" aria-hidden="true"></i>Distance</span>
-              <span class="facts__value">PLACEHOLDER: miles</span>
-            </li>
-            <li class="facts__row">
-              <span class="facts__label"><i class="fa-solid fa-clock" aria-hidden="true"></i>Approximate time</span>
-              <span class="facts__value">PLACEHOLDER: hours</span>
-            </li>
-          </ul>
-        </div>
-        <!-- PLACEHOLDER: replace with a photo from the latest walk (WebP) -->
-        <div class="card-media">
-          <img class="card-media__image" src="img/walk-placeholder.webp" alt="Placeholder for a Ribchester walk photo" width="1200" height="1659" loading="lazy">
-        </div>
+      <!-- Filled from js/walks.js: the first entry is the latest walk -->
+      <div class="container split split--even" data-latest-walk>
+        <noscript><a class="button button--light" href="littlelangdale.html">View the latest walk</a></noscript>
+      </div>
+    </section>
+
+    <section class="section section--sky" id="previous-walks" data-previous-walks hidden>
+      <div class="container">
+        <h2 class="section__title">Previous walks</h2>
+        <ul class="walk-list" data-walk-list></ul>
       </div>
     </section>
 
@@ -146,11 +126,12 @@
 
   <nav class="bottom-nav" aria-label="Quick links">
     <a class="bottom-nav__link" href="index.html"><i class="fa-solid fa-house" aria-hidden="true"></i>Home</a>
-    <a class="bottom-nav__link" href="ribchester.html"><i class="fa-solid fa-person-hiking" aria-hidden="true"></i>Walk</a>
+    <a class="bottom-nav__link" href="index.html#latest-walk"><i class="fa-solid fa-person-hiking" aria-hidden="true"></i>Walk</a>
     <a class="bottom-nav__link" href="index.html#about"><i class="fa-solid fa-user" aria-hidden="true"></i>About</a>
     <a class="bottom-nav__link" href="https://www.youtube.com/@MrJHolt"><i class="fa-brands fa-youtube" aria-hidden="true"></i>YouTube</a>
   </nav>
 
   <script src="js/main.js"></script>
+  <script src="js/walks.js"></script>
 </body>
 </html>
