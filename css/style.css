@@ -480,9 +480,9 @@ ul {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: min(10.5rem, 42vw);
+  width: min(12rem, 42vw);
   aspect-ratio: 1;
-  padding: var(--space-3);
+  padding: var(--space-4) var(--space-3);
   border-radius: 50%;
   background: var(--color-forest);
   box-shadow: var(--shadow-raised);
@@ -508,9 +508,10 @@ ul {
 
 .circle__value {
   font-family: var(--font-display);
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 300;
   line-height: 1.2;
+  text-wrap: balance;
 }
 
 .start-point {
@@ -910,4 +911,10 @@ a.walk-nav__link:hover {
   .accordion__icon {
     transition: none;
   }
+}
+
+.facts-heading {
+  margin: var(--space-5) 0 0;
+  font-size: 1.1rem;
+  font-weight: 500;
 }

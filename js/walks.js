@@ -2,6 +2,16 @@
 // The home page features WALKS[0] and lists the rest under "Previous walks".
 const WALKS = [
   {
+    slug: "ribchester",
+    title: "Ribchester Village Walk",
+    date: "2026-10-10",
+    summary: "A circular village walk in the Ribble Valley with a huge Roman history, and plenty of places for coffee and cake.",
+    url: "ribchester.html",
+    // PLACEHOLDER: replace with a photo from the walk (WebP)
+    image: "img/walk-placeholder.webp",
+    imageAlt: "Placeholder for a Ribchester walk photo"
+  },
+  {
     slug: "littlelangdale",
     title: "Little Langdale",
     date: "2026-10-03",
@@ -14,7 +24,7 @@ const WALKS = [
 ];
 
 // Shown under "Next walk" on the newest walk page until the next walk has an entry above. Use "" if not known yet.
-const COMING_SOON_TITLE = "Ribchester Village Walk, Roman History in the Ribble Valley";
+const COMING_SOON_TITLE = "Whalley, Aqueduct and Abbey";
 
 const formatDate = (iso) =>
   new Date(`${iso}T12:00:00`).toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" });
